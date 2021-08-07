@@ -250,8 +250,8 @@ class IDO{
            agentType= true
            agent_result = await this.contract_farm.methods.query_agent(this.account).call();
            agent_result[0] = this.toNonExponential(Number(this.web3.utils.fromWei(agent_result[0])));
-           agent_result[1] = this.toNonExponential(Number(this.web3.utils.fromWei(agent_result[2])));
-           agent_result[1] = this.toNonExponential(Number(this.web3.utils.fromWei(agent_result[2])));
+           agent_result[1] = this.toNonExponential(Number(this.web3.utils.fromWei(agent_result[1])));
+           agent_result[2] = this.toNonExponential(Number(this.web3.utils.fromWei(agent_result[2])));
         }
 
         // console.log('推荐人',this.ref_addr)
